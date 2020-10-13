@@ -1,20 +1,34 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _dotenv = require('dotenv'); var _dotenv2 = _interopRequireDefault(_dotenv);
+Object.defineProperty(exports, '__esModule', { value: true }); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; } const _dotenv = require('dotenv');
+
+const _dotenv2 = _interopRequireDefault(_dotenv);
 
 _dotenv2.default.config();
 
 require('./databases');
-var _path = require('path');
+const _path = require('path');
 
-var _express = require('express'); var _express2 = _interopRequireDefault(_express);
-var _home = require('./routes/home'); var _home2 = _interopRequireDefault(_home);
-var _user = require('./routes/user'); var _user2 = _interopRequireDefault(_user);
-var _token = require('./routes/token'); var _token2 = _interopRequireDefault(_token);
-var _aluno = require('./routes/aluno'); var _aluno2 = _interopRequireDefault(_aluno);
-var _picture = require('./routes/picture'); var _picture2 = _interopRequireDefault(_picture);
+const _express = require('express');
+
+const _express2 = _interopRequireDefault(_express);
+const _home = require('./routes/home');
+
+const _home2 = _interopRequireDefault(_home);
+const _user = require('./routes/user');
+
+const _user2 = _interopRequireDefault(_user);
+const _token = require('./routes/token');
+
+const _token2 = _interopRequireDefault(_token);
+const _aluno = require('./routes/aluno');
+
+const _aluno2 = _interopRequireDefault(_aluno);
+const _picture = require('./routes/picture');
+
+const _picture2 = _interopRequireDefault(_picture);
 
 class App {
   constructor() {
-    this.app = _express2.default.call(void 0, );
+    this.app = _express2.default.call(void 0);
     this.middlewares();
     this.routes();
   }
@@ -34,4 +48,4 @@ class App {
   }
 }
 
-exports. default = new App().app;
+exports.default = new App().app;
